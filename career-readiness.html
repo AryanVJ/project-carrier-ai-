@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerReady AI - AI-Powered Career Readiness Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="career-style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-robot me-2"></i>CareerReady AI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold mb-4">AI-Powered Career Readiness Platform</h1>
+                    <p class="lead mb-4">Bridge the gap between campus learning and industry expectations with our intelligent career guidance system.</p>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <div class="badge bg-primary p-2"><i class="fas fa-graduation-cap me-2"></i>NEP 2020</div>
+                        <div class="badge bg-success p-2"><i class="fas fa-hand-holding-heart me-2"></i>Skill India</div>
+                        <div class="badge bg-info p-2"><i class="fas fa-laptop-code me-2"></i>Digital India</div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-3">
+                        <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#signupModal">Get Started</button>
+                        <button class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="hero-image text-center">
+                        <i class="fas fa-chart-line text-primary" style="font-size: 15rem; opacity: 0.2;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">AI-Powered Features</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm feature-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-check fa-3x text-primary mb-3"></i>
+                            <h5>Profile Analysis</h5>
+                            <p class="text-muted">AI analyzes your academic records, skills, and interests to understand your potential.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm feature-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-route fa-3x text-success mb-3"></i>
+                            <h5>Career Pathway</h5>
+                            <p class="text-muted">Personalized career roadmaps based on your profile and industry demand.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm feature-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-list-check fa-3x text-warning mb-3"></i>
+                            <h5>Skill Gap Analysis</h5>
+                            <p class="text-muted">Identify missing skills and get recommendations to bridge them.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm feature-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-book-open fa-3x text-danger mb-3"></i>
+                            <h5>Course Recommendations</h5>
+                            <p class="text-muted">Suggested online courses and certifications for your goals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm feature-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-briefcase fa-3x text-info mb-3"></i>
+                            <h5>Opportunity Matching</h5>
+                            <p class="text-muted">AI matches internships and jobs based on your profile.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm feature-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-file-alt fa-3x text-secondary mb-3"></i>
+                            <h5>Resume Builder</h5>
+                            <p class="text-muted">AI-powered resume review and improvement suggestions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm feature-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-video fa-3x text-primary mb-3"></i>
+                            <h5>Mock Interviews</h5>
+                            <p class="text-muted">Practice interviews with AI feedback and scoring.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm feature-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-file-contract fa-3x text-success mb-3"></i>
+                            <h5>Govt Jobs</h5>
+                            <p class="text-muted">Match with government employment opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm feature-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-certificate fa-3x text-warning mb-3"></i>
+                            <h5>Certification Guide</h5>
+                            <p class="text-muted">Recommended certifications for your career path.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">How It Works</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="step-card text-center">
+                        <div class="step-number">1</div>
+                        <h5 class="mt-3">Sign Up</h5>
+                        <p class="text-muted">Create your profile and upload your academic records.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="step-card text-center">
+                        <div class="step-number">2</div>
+                        <h5 class="mt-3">AI Analysis</h5>
+                        <p class="text-muted">Our AI analyzes your profile and creates your career roadmap.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="step-card text-center">
+                        <div class="step-number">3</div>
+                        <h5 class="mt-3">Get Recommendations</h5>
+                        <p class="text-muted">Receive personalized career paths and skill suggestions.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="step-card text-center">
+                        <div class="step-number">4</div>
+                        <h5 class="mt-3">Grow & Succeed</h5>
+                        <p class="text-muted">Track progress and land your dream job.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-3">
+                    <i class="fas fa-users fa-3x mb-3 opacity-75"></i>
+                    <h3 class="fw-bold">10K+</h3>
+                    <p class="lead">Students Trained</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-building fa-3x mb-3 opacity-75"></i>
+                    <h3 class="fw-bold">500+</h3>
+                    <p class="lead">Partner Companies</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-briefcase fa-3x mb-3 opacity-75"></i>
+                    <h3 class="fw-bold">85%</h3>
+                    <p class="lead">Placement Rate</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-trophy fa-3x mb-3 opacity-75"></i>
+                    <h3 class="fw-bold">200+</h3>
+                    <p class="lead">Career Paths</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Success Stories</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-quote-left text-warning mb-3"></i>
+                            <p class="card-text">"CareerReady AI helped me identify my skill gaps and recommended the right courses. I now have an internship at a top tech company!"</p>
+                            <div class="d-flex align-items-center">
+                                <img src="https://via.placeholder.com/50x50/4e73df/ffffff?text=JD" class="rounded-circle me-3" alt="User">
+                                <div>
+                                    <h6 class="mb-0">John Doe</h6>
+                                    <small class="text-muted">Computer Science Student</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-quote-left text-warning mb-3"></i>
+                            <p class="card-text">"The mock interview feature was incredibly helpful. I got confident and landed my dream job after graduation."</p>
+                            <div class="d-flex align-items-center">
+                                <img src="https://via.placeholder.com/50x50/1cc9bb/ffffff?text=JS" class="rounded-circle me-3" alt="User">
+                                <div>
+                                    <h6 class="mb-0">Jane Smith</h6>
+                                    <small class="text-muted">Business Administration</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-quote-left text-warning mb-3"></i>
+                            <p class="card-text">"The government job matching feature helped me find the perfect opportunity. Highly recommended!"</p>
+                            <div class="d-flex align-items-center">
+                                <img src="https://via.placeholder.com/50x50/e74a3b/ffffff?text=AK" class="rounded-circle me-3" alt="User">
+                                <div>
+                                    <h6 class="mb-0">Amit Kumar</h6>
+                                    <small class="text-muted">Engineering Graduate</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login to CareerReady AI</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p class="mb-0">Don't have an account? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create Your Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="signupForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="signupFirstName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="signupLastName" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="signupEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupPassword" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="signupConfirmPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p class="mb-0">Already have an account? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5><i class="fas fa-robot me-2"></i>CareerReady AI</h5>
+                    <p>AI-powered career readiness platform bridging the gap between campus and corporate.</p>
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Home</a></li>
+                        <li><a href="#" class="text-white-50">About Us</a></li>
+                        <li><a href="#" class="text-white-50">Features</a></li>
+                        <li><a href="#" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Get in Touch</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i>info@careerready.ai</li>
+                        <li><i class="fas fa-phone me-2"></i>+91 98765 43210</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Education Hub, Bangalore</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2026 CareerReady AI. Building Viksit Bharat 2047. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="career-script.js"></script>
+</body>
+</html>
