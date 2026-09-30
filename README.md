@@ -47,7 +47,7 @@ This project aligns with:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/career-ready-ai.git
+git clone https://github.com/aryanvj/career-ready-ai.git
 ```
 
 2. Navigate to the project directory:
@@ -79,23 +79,7 @@ hack/
 
 ## Contributing
 
-Contributions are welcome! Please follow these steps:
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License.
-
-## Contact
-
-- **Email:** info@careerready.ai
-- **Phone:** +91 98765 43210
-- **Location:** Education Hub, Bangalore
 
 ---
 
